@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tests</title>
+  </head>
+  <body>
+    <label>Put token:</label>
+    <input type="text" id="token" name="token" onblur="javascript:check()" />
+    <p id="result"></p>
+  </body>
+  <script src="jwt.js"></script>
+  <script>
+    function check(){
+      var jwt = new JWT();
+      var resultText = '';
+      try{
+        var tk = jwt.decodeToken(document.getElementById('token').value);
+        resultText = JSON.stringify(tk);
+      }catch(err){
+        resultText = err.message;
+      }
+      document.getElementById('result').innerHTML = resultText;
+    }
+  </script>
+</html>
