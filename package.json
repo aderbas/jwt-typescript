@@ -1,0 +1,28 @@
+{
+  "name": "jwt-typescript",
+  "version": "0.0.1",
+  "description": "Typescript package for JWT",
+  "main": "jwt.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aderbas/jwt-typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "json",
+    "web",
+    "token",
+    "jwt",
+    "decode",
+    "token"
+  ],
+  "author": "Aderbal Nunes <aderbalnunes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aderbas/jwt-typescript/issues"
+  },
+  "homepage": "https://github.com/aderbas/jwt-typescript#readme"
+}
